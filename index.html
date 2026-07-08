@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talha Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+  <h2>Loading TalhaWeb...</h2>
+</div>
+
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Talha<span>Web</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li><button class="btn small-btn" id="loginBtn">Login</button></li>
+
+        <li><button class="btn small-btn" id="openPopup">Popup</button></li>
+        <li><button class="toggle" id="themeBtn">🌙</button></li>
+      </ul>
+
+      <div class="menu" id="menuBtn">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content animate">
+     <h1>I am <span id="typing"></span></h1>
+
+      <p>
+        This is a modern animated website made with HTML, CSS & JavaScript.
+      </p>
+      <button class="btn" id="scrollBtn">Explore More</button>
+    </div>
+
+    <div class="hero-image animate">
+  <div class="blob">
+    <img src="img/coding.jpg" alt="Talha Image">
+  </div>
+</div>
+
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2 class="section-title animate">Our Services</h2>
+
+    <div class="service-box">
+      <div class="card animate">
+        <h3>Web Design</h3>
+        <p>Modern UI with animations & responsive layout.</p>
+      </div>
+
+      <div class="card animate">
+        <h3>Development</h3>
+        <p>Fast and clean HTML, CSS, JS coding.</p>
+      </div>
+
+      <div class="card animate">
+        <h3>Support</h3>
+        <p>Always ready to help you improve your website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+  <h2 class="section-title">FAQs</h2>
+
+  <div class="faq-item">
+    <h3>What technologies are used?</h3>
+    <p>HTML, CSS, JavaScript with animations.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Is this website responsive?</h3>
+    <p>Yes, it works on mobile, tablet & desktop.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Is login real?</h3>
+    <p>No, this is demo login for learning.</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TalhaWeb | Made with ❤️ by Alizy Shah</p>
+  </footer>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <h2>🎉 Welcome Talha!</h2>
+      <p>This is a beautiful popup made with JS.</p>
+      <button class="btn" id="closePopup">OK</button>
+    </div>
+  </div>
+
+<!-- Scroll Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Back To Top Button -->
+<button id="topBtn">⬆</button>
+
+<!-- Login Popup -->
+<div class="popup-overlay" id="loginOverlay">
+  <div class="login-popup">
+    <h2>🔐 Login</h2>
+
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn" type="submit">Login</button>
+    </form>
+
+    <p class="close-text" id="closeLogin">Cancel</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

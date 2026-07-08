@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Talha Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Talha<span>Web</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><button class="toggle" id="themeBtn">🌙</button></li>
+      </ul>
+
+      <div class="menu" id="menuBtn">☰</div>
+    </nav>
+  </header>
+
+  <section class="page">
+    <h1 class="animate">Contact Us</h1>
+    <p class="animate">Fill the form and we will contact you soon.</p>
+
+    <form class="contact-form animate" id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <h2>✅ Message Sent!</h2>
+      <p>Thanks Talha, we received your message.</p>
+      <button class="btn" id="closePopup">OK</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 TalhaWeb | Made with ❤️ by Alizy Shah</p>
+  </footer>
+
+  <!-- Scroll Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Back To Top Button -->
+<button id="topBtn">⬆</button>
+
+<!-- Login Popup -->
+<div class="popup-overlay" id="loginOverlay">
+  <div class="login-popup">
+    <h2>🔐 Login</h2>
+
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn" type="submit">Login</button>
+    </form>
+
+    <p class="close-text" id="closeLogin">Cancel</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

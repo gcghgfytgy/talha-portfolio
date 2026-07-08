@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Talha Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Talha<span>Web</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="toggle" id="themeBtn">🌙</button></li>
+      </ul>
+
+      <div class="menu" id="menuBtn">☰</div>
+    </nav>
+  </header>
+
+  <!-- Gallery -->
+  <section class="page">
+    <h1 class="animate">Gallery</h1>
+    <p class="animate">Click any image to view it in popup.</p>
+
+    <div class="gallery-grid animate">
+      <img src="img/slide-1.jpg" class="gallery-img" alt="Image 1">
+      <img src="img/slide-02.jpg" class="gallery-img" alt="Image 2">
+      <img src="img/slide-3.jpg" class="gallery-img" alt="Image 3">
+      <img src="img/slide-4.jpg" class="gallery-img" alt="Image 4">
+    </div>
+  </section>
+
+  <!-- Image Popup -->
+  <div class="popup-overlay" id="imgPopup">
+    <div class="img-popup-box">
+      <span id="closeImgPopup">✖</span>
+      <img id="popupImage" src="" alt="popup">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 TalhaWeb | Made with ❤️ by Alizy Shah</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

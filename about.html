@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Talha Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Talha<span>Web</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li><button class="toggle" id="themeBtn">🌙</button></li>
+      </ul>
+
+      <div class="menu" id="menuBtn">☰</div>
+    </nav>
+  </header>
+
+  <section class="about-page">
+
+  <div class="about-hero animate">
+    <h1>About Us</h1>
+    <p>
+      Welcome to <b>TalhaWeb</b> 😄  
+      We create modern, responsive and animated websites using
+      <b>HTML, CSS & JavaScript</b>.
+    </p>
+  </div>
+
+  <!-- Counters -->
+  <div class="counter-box">
+    <div class="counter-card animate">
+      <h2 class="count" data-target="120">0</h2>
+      <p>Projects Completed</p>
+    </div>
+
+    <div class="counter-card animate">
+      <h2 class="count" data-target="50">0</h2>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="counter-card animate">
+      <h2 class="count" data-target="5">0</h2>
+      <p>Years Experience</p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="skills-section animate">
+    <h2 class="section-title">Our Skills</h2>
+
+    <div class="skill">
+      <p>HTML</p>
+      <div class="bar"><span style="width: 95%"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="bar"><span style="width: 80%"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="bar"><span style="width: 50%"></span></div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="team-section">
+    <h2 class="section-title animate">Our Team</h2>
+
+    <div class="team-cards">
+      <div class="team-card animate">
+        <h3>Talha</h3>
+        <p>Front-End Developer</p>
+      </div>
+
+      <div class="team-card animate">
+        <h3>Alizy</h3>
+        <p>JavaScript Expert</p>
+      </div>
+
+      <div class="team-card animate">
+        <h3>Designer</h3>
+        <p>UI/UX Designer</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="about-cta animate">
+    <h2>Want a Website Like This?</h2>
+    <p>Contact us and we will make a beautiful website for you 💙</p>
+    <a href="contact.html" class="btn">Contact Now</a>
+  </div>
+
+</section>
+
+
+  <footer class="footer">
+    <p>© 2026 TalhaWeb | Made with ❤️ by Alizy Shah</p>
+  </footer>
+
+  <!-- Scroll Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Back To Top Button -->
+<button id="topBtn">⬆</button>
+
+<!-- Login Popup -->
+<div class="popup-overlay" id="loginOverlay">
+  <div class="login-popup">
+    <h2>🔐 Login</h2>
+
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn" type="submit">Login</button>
+    </form>
+
+    <p class="close-text" id="closeLogin">Cancel</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
